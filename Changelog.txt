@@ -1,0 +1,5 @@
+16.11.2017
+Initial commit
+17.11.2017
+Trombone fixed
+First pre-release
