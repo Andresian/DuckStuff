@@ -44,7 +44,7 @@ namespace DuckGame
 		}
 
 		// Token: 0x060015CD RID: 5581
-		public override void Update()
+		public override void Update() //When used
 		{
 			Duck duck = this.owner as Duck;
 			if (duck != null)
@@ -52,7 +52,7 @@ namespace DuckGame
 				if (base.isServerForObject)
 				{
 					this.handPitch = 1f - Mouse.x / Layer.HUD.camera.width * 2f;
-					if (this.handPitch < 0f)
+					if (this.handPitch < 0f) //Prevents hand and pitch going too far
 					{
 						float currentpitch = this.handPitch;
 						float neededpitch = 0f - this.handPitch;
@@ -106,7 +106,7 @@ namespace DuckGame
 					this.collisionOffset = new Vec2(-4f, -7f);
 					this.collisionSize = new Vec2(8f, 16f);
 				}
-				else
+				else //Hand pitch
 				{
 					this.handOffset = new Vec2(6f + (1f - this.handPitch) * 4f, -4f + (1f - this.handPitch) * 4f);
 					this.handAngle = (1f - this.handPitch) * 0.4f * (float)this.offDir;
