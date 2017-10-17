@@ -52,6 +52,12 @@ namespace DuckGame
 				if (base.isServerForObject)
 				{
 					this.handPitch = 1f - Mouse.x / Layer.HUD.camera.width * 2f;
+					if (this.handPitch < 0f)
+					{
+						float currentpitch = this.handPitch;
+						float neededpitch = 0f - this.handPitch;
+						this.handPitch = currentpitch + neededpitch;
+					}
 					if (duck.inputProfile.Down("SHOOT"))
 					{
 						this.notePitch = this.handPitch + 0.01f;
