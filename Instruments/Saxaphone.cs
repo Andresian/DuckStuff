@@ -6,7 +6,7 @@ namespace DuckGame
 	// Token: 0x0200024A RID: 586
 	[EditorGroup("guns|misc")]
 	[BaggedProperty("isFatal", false)]
-	public class Saxaphone : Gun
+	public class Saxaphone : Gun 
 	{
 		// Token: 0x060011C2 RID: 4546
 		public Saxaphone(float xval, float yval) : base(xval, yval)
@@ -37,14 +37,14 @@ namespace DuckGame
 		}
 
 		// Token: 0x060011C4 RID: 4548
-		public override void Update()
+		public override void Update() //When being used
 		{
 			Duck duck = this.owner as Duck;
 			if (duck != null)
 			{
 				if (base.isServerForObject)
 				{
-					this.handPitch = 1f - Mouse.x / Layer.HUD.camera.width * 2f;
+					this.handPitch = 1f - Mouse.x / Layer.HUD.camera.width * 2f; //Gets mouse pos and translates to pitch
 					if (duck.inputProfile.Down("SHOOT"))
 					{
 						this.notePitch = this.handPitch + 0.01f;
@@ -85,7 +85,7 @@ namespace DuckGame
 						this.noteSound = null;
 					}
 				}
-				if (this._raised)
+				if (this._raised) 
 				{
 					this.handAngle = 0f;
 					this.handOffset = new Vec2(0f, 0f);
@@ -94,7 +94,7 @@ namespace DuckGame
 					this.collisionSize = new Vec2(8f, 16f);
 					this.OnReleaseAction();
 				}
-				else
+				else // gets hand angle using mouse pitch
 				{
 					this.handOffset = new Vec2(5f + (1f - this.handPitch) * 2f, -2f + (1f - this.handPitch) * 4f);
 					this.handAngle = (1f - this.handPitch) * 0.4f * (float)this.offDir;
