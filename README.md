@@ -1,7 +1,6 @@
 # DuckStuff + CommentDuck
 A mod that enhances duck game experience and gives keyboard players privilege they deserve.
 Files there are just commented and edited pieces of code from decompiled Duck Game
-(Also commented code yay)
 # How to install
 1. Open releases
 2. Choose version you need
