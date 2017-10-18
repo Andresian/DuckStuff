@@ -22,7 +22,7 @@ namespace DuckGame
 			}
 			set
 			{
-				this._angle = Mouse.x;
+				this._angle = value;
 			}
 		}
 
