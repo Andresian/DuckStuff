@@ -1,5 +1,8 @@
 16.11.2017
 Initial commit
-17.11.2017
+17.11.2017 0.1
 Trombone fixed
 First pre-release
+18.11.2017 0.2
+Removed rccar balance
+removed sword pointing
