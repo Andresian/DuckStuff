@@ -1,8 +1,10 @@
-16.11.2017
+16.10.2017
 Initial commit
-17.11.2017 0.1
+17.10.2017 0.1
 Trombone fixed
 First pre-release
-18.11.2017 0.2
+18.10.2017 0.2
 Removed rccar balance
 removed sword pointing
+20.10.2017 0.3
+Death laser re-added in multiplayer
