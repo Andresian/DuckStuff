@@ -8,3 +8,5 @@ Removed rccar balance
 removed sword pointing
 20.10.2017 0.3
 Death laser re-added in multiplayer
+21.10.2017
+Added host migration and console kicking
