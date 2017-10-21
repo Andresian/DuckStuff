@@ -7,12 +7,12 @@ using System.Reflection;
 
 namespace DuckGame
 {
-	// Token: 0x0200043E RID: 1086
+	// Token: 0x020003FA RID: 1018
 	public class DevConsole
 	{
-		// Token: 0x170005DF RID: 1503
-		// (get) Token: 0x06001F47 RID: 8007 RVA: 0x000160CA File Offset: 0x000142CA
-		// (set) Token: 0x06001F48 RID: 8008 RVA: 0x000160D1 File Offset: 0x000142D1
+		// Token: 0x170005DB RID: 1499
+		// (get) Token: 0x06001EA1 RID: 7841
+		// (set) Token: 0x06001EA2 RID: 7842
 		public static DevConsoleCore core
 		{
 			get
@@ -25,8 +25,8 @@ namespace DuckGame
 			}
 		}
 
-		// Token: 0x170005E0 RID: 1504
-		// (get) Token: 0x06001F49 RID: 8009 RVA: 0x000160D9 File Offset: 0x000142D9
+		// Token: 0x170005DC RID: 1500
+		// (get) Token: 0x06001EA3 RID: 7843
 		public static bool open
 		{
 			get
@@ -35,22 +35,22 @@ namespace DuckGame
 			}
 		}
 
-		// Token: 0x06001F4A RID: 8010 RVA: 0x000160E5 File Offset: 0x000142E5
+		// Token: 0x06001EA4 RID: 7844
 		public static void SuppressDevConsole()
 		{
 			DevConsole._oldConsole = DevConsole._enableNetworkDebugging;
 			DevConsole._enableNetworkDebugging = false;
 		}
 
-		// Token: 0x06001F4B RID: 8011 RVA: 0x000160F7 File Offset: 0x000142F7
+		// Token: 0x06001EA5 RID: 7845
 		public static void RestoreDevConsole()
 		{
 			DevConsole._enableNetworkDebugging = DevConsole._oldConsole;
 		}
 
-		// Token: 0x170005E1 RID: 1505
-		// (get) Token: 0x06001F4C RID: 8012 RVA: 0x00016103 File Offset: 0x00014303
-		// (set) Token: 0x06001F4D RID: 8013 RVA: 0x0001610A File Offset: 0x0001430A
+		// Token: 0x170005DD RID: 1501
+		// (get) Token: 0x06001EA6 RID: 7846
+		// (set) Token: 0x06001EA7 RID: 7847
 		public static bool enableNetworkDebugging
 		{
 			get
@@ -63,9 +63,9 @@ namespace DuckGame
 			}
 		}
 
-		// Token: 0x170005E2 RID: 1506
-		// (get) Token: 0x06001F4E RID: 8014 RVA: 0x00016112 File Offset: 0x00014312
-		// (set) Token: 0x06001F4F RID: 8015 RVA: 0x0001611E File Offset: 0x0001431E
+		// Token: 0x170005DE RID: 1502
+		// (get) Token: 0x06001EA8 RID: 7848
+		// (set) Token: 0x06001EA9 RID: 7849
 		public static bool splitScreen
 		{
 			get
@@ -78,9 +78,9 @@ namespace DuckGame
 			}
 		}
 
-		// Token: 0x170005E3 RID: 1507
-		// (get) Token: 0x06001F50 RID: 8016 RVA: 0x0001612B File Offset: 0x0001432B
-		// (set) Token: 0x06001F51 RID: 8017 RVA: 0x00016137 File Offset: 0x00014337
+		// Token: 0x170005DF RID: 1503
+		// (get) Token: 0x06001EAA RID: 7850
+		// (set) Token: 0x06001EAB RID: 7851
 		public static bool rhythmMode
 		{
 			get
@@ -93,9 +93,9 @@ namespace DuckGame
 			}
 		}
 
-		// Token: 0x170005E4 RID: 1508
-		// (get) Token: 0x06001F52 RID: 8018 RVA: 0x00016144 File Offset: 0x00014344
-		// (set) Token: 0x06001F53 RID: 8019 RVA: 0x00016150 File Offset: 0x00014350
+		// Token: 0x170005E0 RID: 1504
+		// (get) Token: 0x06001EAC RID: 7852
+		// (set) Token: 0x06001EAD RID: 7853
 		public static bool qwopMode
 		{
 			get
@@ -108,9 +108,9 @@ namespace DuckGame
 			}
 		}
 
-		// Token: 0x170005E5 RID: 1509
-		// (get) Token: 0x06001F54 RID: 8020 RVA: 0x0001615D File Offset: 0x0001435D
-		// (set) Token: 0x06001F55 RID: 8021 RVA: 0x00016169 File Offset: 0x00014369
+		// Token: 0x170005E1 RID: 1505
+		// (get) Token: 0x06001EAE RID: 7854
+		// (set) Token: 0x06001EAF RID: 7855
 		public static bool showIslands
 		{
 			get
@@ -123,9 +123,9 @@ namespace DuckGame
 			}
 		}
 
-		// Token: 0x170005E6 RID: 1510
-		// (get) Token: 0x06001F56 RID: 8022 RVA: 0x00016176 File Offset: 0x00014376
-		// (set) Token: 0x06001F57 RID: 8023 RVA: 0x00016182 File Offset: 0x00014382
+		// Token: 0x170005E2 RID: 1506
+		// (get) Token: 0x06001EB0 RID: 7856
+		// (set) Token: 0x06001EB1 RID: 7857
 		public static bool showCollision
 		{
 			get
@@ -138,9 +138,9 @@ namespace DuckGame
 			}
 		}
 
-		// Token: 0x170005E7 RID: 1511
-		// (get) Token: 0x06001F58 RID: 8024 RVA: 0x0001618F File Offset: 0x0001438F
-		// (set) Token: 0x06001F59 RID: 8025 RVA: 0x0001619B File Offset: 0x0001439B
+		// Token: 0x170005E3 RID: 1507
+		// (get) Token: 0x06001EB2 RID: 7858
+		// (set) Token: 0x06001EB3 RID: 7859
 		public static bool shieldMode
 		{
 			get
@@ -153,7 +153,7 @@ namespace DuckGame
 			}
 		}
 
-		// Token: 0x06001F5A RID: 8026 RVA: 0x0012E17C File Offset: 0x0012C37C
+		// Token: 0x06001EB4 RID: 7860
 		public static void Draw()
 		{
 			if (DevConsole._core.font == null)
@@ -203,7 +203,7 @@ namespace DuckGame
 			}
 		}
 
-		// Token: 0x06001F5B RID: 8027 RVA: 0x0012E484 File Offset: 0x0012C684
+		// Token: 0x06001EB5 RID: 7861
 		public static Profile ProfileByName(string findName)
 		{
 			foreach (Profile profile in Profiles.all)
@@ -236,7 +236,7 @@ namespace DuckGame
 			return null;
 		}
 
-		// Token: 0x06001F5C RID: 8028 RVA: 0x0012E5E4 File Offset: 0x0012C7E4
+		// Token: 0x06001EB6 RID: 7862
 		public static void RunCommand(string command)
 		{
 			if (DG.buildExpired)
@@ -1006,6 +1006,27 @@ namespace DuckGame
 						return;
 					}
 				}
+				if (text == "kick")
+				{
+					flag = true;
+					string text14 = consoleCommand.NextWord();
+					foreach (Profile profile6 in Profiles.all)
+					{
+						if (profile6.name.ToLower(currentCulture) == text14)
+						{
+							if (profile6.duck == null)
+							{
+								DevConsole._core.lines.Enqueue(new DCLine
+								{
+									line = text14 + " is not in the game!",
+									color = Color.Red
+								});
+								return;
+							}
+							DevConsole.Kicka(profile6);
+						}
+					}
+				}
 				if (text == "globalscores")
 				{
 					flag = true;
@@ -1013,10 +1034,10 @@ namespace DuckGame
 					{
 						if (enumerator4.MoveNext())
 						{
-							Profile profile6 = enumerator4.Current;
+							Profile profile7 = enumerator4.Current;
 							DevConsole._core.lines.Enqueue(new DCLine
 							{
-								line = profile6.name + ": " + profile6.stats.CalculateProfileScore(false).ToString("0.000"),
+								line = profile7.name + ": " + profile7.stats.CalculateProfileScore(false).ToString("0.000"),
 								color = Color.Red
 							});
 						}
@@ -1025,7 +1046,7 @@ namespace DuckGame
 				if (text == "scorelog")
 				{
 					flag = true;
-					string text14 = consoleCommand.NextWord();
+					string text15 = consoleCommand.NextWord();
 					if (consoleCommand.NextWord() != "")
 					{
 						DevConsole._core.lines.Enqueue(new DCLine
@@ -1035,7 +1056,7 @@ namespace DuckGame
 						});
 						return;
 					}
-					if (text14 == "")
+					if (text15 == "")
 					{
 						DevConsole._core.lines.Enqueue(new DCLine
 						{
@@ -1047,7 +1068,7 @@ namespace DuckGame
 					int logScores = 0;
 					try
 					{
-						logScores = Convert.ToInt32(text14);
+						logScores = Convert.ToInt32(text15);
 					}
 					catch
 					{
@@ -1142,10 +1163,10 @@ namespace DuckGame
 						line = "Your main account has been R U I N E D !",
 						color = Color.Red
 					});
-					Profile profile7 = new Profile(Profiles.experienceProfile.steamID.ToString(), null, null, null, false, Profiles.experienceProfile.steamID.ToString());
-					profile7.steamID = Profiles.experienceProfile.steamID;
+					Profile profile8 = new Profile(Profiles.experienceProfile.steamID.ToString(), null, null, null, false, Profiles.experienceProfile.steamID.ToString());
+					profile8.steamID = Profiles.experienceProfile.steamID;
 					Profiles.Remove(Profiles.experienceProfile);
-					Profiles.Add(profile7);
+					Profiles.Add(profile8);
 					flag = true;
 				}
 				if (text == "rhythmmode")
@@ -1239,7 +1260,7 @@ namespace DuckGame
 			}
 		}
 
-		// Token: 0x06001F5D RID: 8029 RVA: 0x00130340 File Offset: 0x0012E540
+		// Token: 0x06001EB7 RID: 7863
 		public static void Log(string text, Color c, float scale = 2f, int index = -1)
 		{
 			DCLine item = new DCLine
@@ -1267,13 +1288,13 @@ namespace DuckGame
 			}
 		}
 
-		// Token: 0x06001F5E RID: 8030 RVA: 0x000161A8 File Offset: 0x000143A8
+		// Token: 0x06001EB8 RID: 7864
 		public static void Log(DCSection section, string text, int netIndex = -1)
 		{
 			DevConsole.Log(section, Verbosity.Normal, text, netIndex);
 		}
 
-		// Token: 0x06001F5F RID: 8031 RVA: 0x00130400 File Offset: 0x0012E600
+		// Token: 0x06001EB9 RID: 7865
 		public static void Log(DCSection section, Verbosity verbose, string text, int netIndex = -1)
 		{
 			DCLine item = new DCLine
@@ -1303,7 +1324,7 @@ namespace DuckGame
 			}
 		}
 
-		// Token: 0x06001F60 RID: 8032 RVA: 0x001304D8 File Offset: 0x0012E6D8
+		// Token: 0x06001EBA RID: 7866
 		public static void Chart(string chart, string section, double x, double y, Color c)
 		{
 			List<DCChartValue> pendingChartValues = DevConsole._core.pendingChartValues;
@@ -1321,12 +1342,12 @@ namespace DuckGame
 			}
 		}
 
-		// Token: 0x06001F61 RID: 8033 RVA: 0x000033F8 File Offset: 0x000015F8
+		// Token: 0x06001EBB RID: 7867
 		public static void UpdateGraph(int index, NetGraph target)
 		{
 		}
 
-		// Token: 0x06001F62 RID: 8034 RVA: 0x0013055C File Offset: 0x0012E75C
+		// Token: 0x06001EBC RID: 7868
 		public static void Update()
 		{
 			if (DevConsole._core.logScores >= 0)
@@ -1393,28 +1414,46 @@ namespace DuckGame
 			}
 		}
 
-		// Token: 0x04001E13 RID: 7699
+		// Token: 0x06002511 RID: 9489
+		public static void Kicka(Profile p)
+		{
+			if (p.slotType == SlotType.Local)
+			{
+				DuckNetwork.SendToEveryone(new NMClientDisconnect(DG.localID.ToString(), p.networkIndex));
+				DuckNetwork.ResetProfile(p);
+				p.team = null;
+				return;
+			}
+			if (p != null && p.connection != null && p.connection != DuckNetwork.localConnection)
+			{
+				SFX.Play("little_punch", 1f, 0f, 0f, false);
+				Send.Message(new NMKick(), p.connection);
+				p.networkStatus = DuckNetStatus.Kicking;
+			}
+		}
+
+		// Token: 0x04001DB8 RID: 7608
 		public static bool fancyMode = false;
 
-		// Token: 0x04001E14 RID: 7700
+		// Token: 0x04001DB9 RID: 7609
 		private static DevConsoleCore _core = new DevConsoleCore();
 
-		// Token: 0x04001E15 RID: 7701
+		// Token: 0x04001DBA RID: 7610
 		private static bool _enableNetworkDebugging = false;
 
-		// Token: 0x04001E16 RID: 7702
+		// Token: 0x04001DBB RID: 7611
 		private static bool _oldConsole;
 
-		// Token: 0x04001E17 RID: 7703
+		// Token: 0x04001DBC RID: 7612
 		public static bool fuckUpPacketOrder = false;
 
-		// Token: 0x04001E18 RID: 7704
+		// Token: 0x04001DBD RID: 7613
 		public static List<DCLine> debuggerLines = new List<DCLine>();
 
-		// Token: 0x04001E19 RID: 7705
+		// Token: 0x04001DBE RID: 7614
 		public static Sprite _tray;
 
-		// Token: 0x04001E1A RID: 7706
+		// Token: 0x04001DBF RID: 7615
 		public static Sprite _scan;
 	}
 }
