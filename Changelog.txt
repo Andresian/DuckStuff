@@ -10,3 +10,6 @@ removed sword pointing
 Death laser re-added in multiplayer
 21.10.2017
 Added host migration and console kicking
+25.10.2017
+Fixed rccar
+Chainsaw mode changing
