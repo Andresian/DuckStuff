@@ -82,29 +82,29 @@ namespace DuckGame
 			{
 				return false;
 			}
-			ATRCShrapnel shrap = new ATRCShrapnel();
-			shrap.MakeNetEffect(this.position, false);
-			List<Bullet> firedBullets = new List<Bullet>();
+			ATRCShrapnel atrcshrapnel = new ATRCShrapnel();
+			atrcshrapnel.MakeNetEffect(this.position, false);
+			List<Bullet> list = new List<Bullet>();
 			for (int i = 0; i < 20; i++)
 			{
-				float dir = (float)i * 18f - 5f + Rando.Float(10f);
-				shrap = new ATRCShrapnel();
-				shrap.range = 55f + Rando.Float(14f);
-				Bullet bullet = new Bullet(base.x + (float)(Math.Cos((double)Maths.DegToRad(dir)) * 6.0), base.y - (float)(Math.Sin((double)Maths.DegToRad(dir)) * 6.0), shrap, dir, null, false, -1f, false, true);
+				float num = (float)i * 18f - 5f + Rando.Float(10f);
+				atrcshrapnel = new ATRCShrapnel();
+				atrcshrapnel.range = 55f + Rando.Float(14f);
+				Bullet bullet = new Bullet(base.x + (float)(Math.Cos((double)Maths.DegToRad(num)) * 6.0), base.y - (float)(Math.Sin((double)Maths.DegToRad(num)) * 6.0), atrcshrapnel, num, null, false, -1f, false, true);
 				bullet.firedFrom = this;
-				firedBullets.Add(bullet);
+				list.Add(bullet);
 				Level.Add(bullet);
 			}
 			if (Network.isActive)
 			{
-				Send.Message(new NMFireGun(null, firedBullets, 0, false, 4, false), NetMessagePriority.ReliableOrdered, null);
-				firedBullets.Clear();
+				Send.Message(new NMFireGun(null, list, 0, false, 4, false), NetMessagePriority.ReliableOrdered, null);
+				list.Clear();
 			}
 			Level.Remove(this);
-			FollowCam cam = Level.current.camera as FollowCam;
-			if (cam != null)
+			FollowCam followCam = Level.current.camera as FollowCam;
+			if (followCam != null)
 			{
-				cam.Remove(this);
+				followCam.Remove(this);
 			}
 			if (Recorder.currentRecording != null)
 			{
@@ -143,7 +143,7 @@ namespace DuckGame
 			{
 				if (this.hSpeed > -this._maxSpeed)
 				{
-					this.hSpeed -= 0.15f;
+					this.hSpeed -= 0.4f;
 				}
 				else
 				{
@@ -157,7 +157,7 @@ namespace DuckGame
 			{
 				if (this.hSpeed < this._maxSpeed)
 				{
-					this.hSpeed += 0.15f;
+					this.hSpeed += 0.4f;
 				}
 				else
 				{
@@ -222,7 +222,7 @@ namespace DuckGame
 		private float _tilt;
 
 		// Token: 0x04001711 RID: 5905
-		private float _maxSpeed = 3f;
+		private float _maxSpeed = 6f;
 
 		// Token: 0x04001712 RID: 5906
 		private SinWave _wave = new SinWave(0.1f, 0f);
